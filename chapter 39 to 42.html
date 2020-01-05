@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script>
+        
+var subject1 = parseInt(prompt("Enter your first subject marks"));
+var subject2 = parseInt(prompt("Enter your second subject marks"));
+var subject3 = parseInt(prompt("Enter your third subject marks"));
+var subject4 = parseInt(prompt("Enter your forth subject marks"));
+var subject5 = parseInt(prompt("Enter your Fifth subject marks"));
+
+var totalObtainedMarks = subject1 + subject2 + subject3 + subject4 + subject5;
+console.log(totalObtainedMarks);
+
+
+var percentage = totalObtainedMarks/500 * 100;
+totalObtainedMarks = totalObtainedMarks.toString()
+percentage = percentage.toString()
+alert(totalObtainedMarks + "===" + percentage);
+
+
+switch (true){
+    case  (percentage >= 90 && percentage <= 100):
+        alert("Grade A+");
+        break;
+
+    case (percentage >= 80 && percentage < 89):
+        alert("Grade A");
+        break;
+
+    case  (percentage >= 70 && percentage < 78):
+        alert("Grade B");
+        break;
+
+    case (percentage >= 60 && percentage < 69):
+        alert("Grade C");
+        break;
+
+    case (percentage >= 50 && percentage < 59):
+        alert("Grade D");
+        break;
+
+    case  (percentage >= 40 && percentage < 49):
+        alert("Just Pass");
+        break;
+
+    default:
+        alert("Fail");
+}
+            
+        
+            
+            </script>
+    </head>
+</html>
